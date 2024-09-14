@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <title>Sobre Nós</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F4F4F4;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        header ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: #9B7D4B;
+            font-weight: bold;
+        }
+
+        /* Dropdown Menu Styles */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            top: 100%;
+            left: 0;
+            text-align: left;
+            padding: 10px 0;
+        }
+
+        .dropdown-content a {
+            color: #9B7D4B;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover > a {
+            color: #6B4F33;
+        }
+
+        .logo-container {
+            background-color: #383F3A;
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container h2 {
+            color: white;
+            font-size: 22px;
+        }
+
+        .logo img {
+            height: 200px;
+        }
+
+        /* Seção com imagem de fundo */
+        #imagem-fundo {
+            background-image: url('images/sobrenos_fundo.png'); /* Substitua pelo caminho da sua imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            height: 900px; /* Ajuste conforme necessário */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* Container verde sobre a imagem de fundo */
+        #container-verde {
+            position: absolute; /* Faz o container ficar sobre a imagem de fundo */
+            top: 50px; /* Ajuste conforme necessário */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #383F3A; /* Cor verde para o fundo do container */
+            padding: 50px;
+            text-align: left; /* Alinha o texto à esquerda */
+            color: white;
+            max-width: 2000px; /* Ajuste conforme necessário */
+            width: 90%;
+            z-index: 10; /* Garante que o container fique sobre a imagem de fundo */
+        }
+
+        #container-verde h2, #container-verde h3 {
+            color: #9B7D4B; /* Cor do título */
+            margin-bottom: 20px;
+        }
+
+        #container-verde p {
+            margin-bottom: 20px;
+        }
+
+        #container-verde img {
+            margin-top: 20px; /* Espaçamento entre o texto e a imagem */
+            max-width: 100%; /* Garante que a imagem se ajuste ao tamanho do container */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul data-aos="fade-left">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#sobrenós">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li class="dropdown">
+                    <a href="#contato">Contato</a>
+                    <div class="dropdown-content">
+                        <a href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
+                        <a href="mailto:example@example.com">Email</a>
+                        <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="logo-container">
+            <h2 data-aos="fade-up">Sobre Nós</h2>
+            <div class="logo">
+                <img src="images/logo_principal.png" alt="Logo do Site">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção com imagem de fundo -->
+        <section id="imagem-fundo">
+            <div id="container-verde">
+                <h2>Tecnologia a Serviço da Justiça</h2>
+                <p>Na Pedro Nespolis Advogados, a inovação é parte essencial do nosso trabalho. Utilizamos ferramentas tecnológicas avançadas, como inteligência artificial, para tornar o processo mais rápido e eficiente. Desde o primeiro contato até o desfecho do processo judicial, você terá acesso a um atendimento virtual, com praticidade e segurança.
+                    Essa abordagem permite que o cliente acompanhe cada etapa do seu caso em tempo real, economizando tempo e facilitando o processo de decisão.</p>
+                <h2>Nossa Missão</h2>
+                <p>Buscamos resolver conflitos de forma rápida e eficaz, sempre priorizando soluções extrajudiciais, que economizam tempo e dinheiro. Nos casos onde o processo judicial é inevitável, nossa equipe trabalha com estratégias jurídicas robustas, garantindo a proteção dos interesses dos nossos clientes.
+                    Seja no Direito Trabalhista, de Família ou Criminal, nossa equipe está comprometida em oferecer soluções personalizadas que atendam às suas necessidades, sempre com transparência e respeito.</p>
+                    <h3>O que Nossos Clientes Dizem</h3>
+                    <p>Veja o que clientes que confiaram em nossos serviços têm a dizer sobre o nosso trabalho:</p>
+                    <img src="images/av_clientes.png" alt="Equipe de Advogados">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer vazio para futuras adições -->
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
+
+
+
+

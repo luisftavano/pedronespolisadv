@@ -225,24 +225,75 @@ header {
 .pulse-text {
     animation: pulse 2s infinite; 
 }
-footer {
-    background-color: #383F3A;
-    color: #fff;
-    padding: 20px;
-    min-height: 150px; /* Garante a altura mínima */
-    display: flex; /* Permite alinhar os elementos verticalmente */
-    align-items: center; /* Centraliza os elementos verticalmente */
-  }
-  
-  .container {
-    max-width: 1140px;
-  }
-  
-  .fab {
-    font-size: 24px;
-    margin: 0 10px;
-  }
+main {
+    flex: 1; /* Faz com que o main ocupe o espaço disponível restante */
+}
 
+footer {
+    background-color: #383F3A; /* Cor de fundo cinza */
+    padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box; /* Inclui o padding na altura total do footer */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box; /* Inclui o padding na largura total do container */
+}
+
+.footer-logo {
+    margin-right: 0; /* Adiciona espaço à direita do logo */
+    display: flex;
+    align-items:flex-end; /* Alinha verticalmente o logo */
+}
+
+.footer-logo img {
+    max-height: 100px; /* Define a altura máxima da imagem */
+    width: auto; /* Mantém a proporção da imagem */
+}
+
+.footer-info {
+    text-align: left;
+    color: white;
+    
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    
+}
+
+.footer-nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-social a img {
+    width: 30px;
+    height: 30px;
+}
 
 @keyframes pulse {
     0% {

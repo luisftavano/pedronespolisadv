@@ -77,7 +77,7 @@ header {
     align-items: center;
 }
 .logo-container h2{
-    color:white;
+    color:#9B7D4B;
     font-size: 22px;
 }
   
@@ -247,10 +247,12 @@ footer {
 }
 
 .footer-logo {
-    margin-right: 0; /* Adiciona espaço à direita do logo */
+    margin-right: 0; /* Remove qualquer margem à direita */
+    transform: translateX(-100px); 
     display: flex;
-    align-items:flex-end; /* Alinha verticalmente o logo */
+    align-items: flex-end; /* Alinha verticalmente a logo */
 }
+
 
 .footer-logo img {
     max-height: 100px; /* Define a altura máxima da imagem */
@@ -260,6 +262,7 @@ footer {
 .footer-info {
     text-align: left;
     color: white;
+    transform:translate(-160px);
     
 }
 
@@ -274,6 +277,7 @@ footer {
     display: flex;
     gap: 20px;
     align-items: center;
+    transform: translate(140px);
     
 }
 
@@ -288,12 +292,31 @@ footer {
     display: flex;
     gap: 10px;
     align-items: center;
+    transform: translate(100px);
 }
 
 .footer-social a img {
     width: 30px;
     height: 30px;
 }
+.footer-credits {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    background-color: #383F3A; /* Mantém o mesmo fundo do footer */
+    padding: 10px 0;
+}
+
+.footer-credits p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-credits strong {
+    font-weight: bold;
+}
+
 
 @keyframes pulse {
     0% {

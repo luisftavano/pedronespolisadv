@@ -1,0 +1,189 @@
+/* Estilos gerais */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Certifica-se de que o header não tenha margem ou padding */
+header {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-hamburger {
+    display: none; /* Inicialmente escondido */
+}
+
+/* Esconde o menu padrão em todas as telas menores que 1024px */
+@media (max-width: 1024px) {
+    /* Esconde o menu padrão */
+    nav ul {
+        display: none !important; /* Esconde o menu padrão */
+    }
+
+    /* Ajustar o .logo-container */
+    .logo-container {
+        padding: 0; /* Remove todo o padding */
+        height: auto; /* Ajusta a altura conforme necessário */
+        background-color: #383F3A; /* Cor de fundo do container verde */
+        display: flex;
+        justify-content: center;
+        align-items: center; /* Centraliza verticalmente */
+        position: relative;
+        width: 100%; /* Garante que ocupe toda a largura */
+        margin: 0; /* Remove margem */
+    }
+
+    /* Mostrar o menu hambúrguer */
+    .menu-hamburger {
+        display: flex !important; /* Garante que o menu hambúrguer apareça */
+        flex-direction: column;
+        cursor: pointer;
+        width: 30px;
+        height: 20px;
+        justify-content: space-between;
+        position: absolute;
+        top: 20px; /* Ajusta para centralizar verticalmente */
+        right: 20px;
+        z-index: 1001; /* Garante que esteja acima de outros elementos */
+    }
+
+    .menu-hamburger span {
+        display: block;
+        height: 4px;
+        background-color: #9B7D4B;
+        border-radius: 2px;
+    }
+
+    /* Estilos para mostrar o menu quando a classe .active for adicionada */
+    nav ul.active {
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: white;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        z-index: 1000;
+        padding: 1;
+    }
+
+    nav ul li {
+        margin: 25px 0;
+        padding: 5px 25px; /* Adiciona espaçamento horizontal */
+    }
+
+    /* Ajustar título principal */
+    .titulo-principal {
+        font-size: 24px;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.6); /* Fundo para melhorar a legibilidade */
+        border-radius: 5px;
+    }
+
+    /* Ajustar imagens internas */
+    .imagem-interna {
+        max-width: 100px;
+    }
+
+    /* Ajustar entre em contato */
+    #entre-em-contato .texto-container {
+        padding: 10px;
+    }
+
+    /* Ajustar seção 'Por que nos escolher' */
+    .quadrados-container {
+        padding: 0 10px;
+        flex-direction: column;
+    }
+
+    /* Ajustar footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Centralizar conteúdo */
+    }
+
+    .footer-info,
+    .footer-nav,
+    .footer-social {
+        margin-top: 20px;
+    }
+
+    /* Esconde o carrossel no mobile */
+    #carrossel {
+        display: none;
+    }
+}
+
+/* Estilos para telas menores que 768px */
+@media (max-width: 768px) {
+    /* Esconde o menu padrão para garantir que apenas o hambúrguer seja visível */
+    nav ul {
+        display: none !important; /* Garante que o menu padrão esteja oculto */
+    }
+
+    /* Ajustar padding do menu hambúrguer */
+    nav ul.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: white;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        z-index: 1000;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+
+    /* Outros ajustes para telas menores que 768px */
+    /* Ajustar a logo */
+    .logo img {
+        height: 120px;
+    }
+
+    /* Ajustar imagens internas */
+    .imagem-interna {
+        max-width: 100px;
+    }
+}
+
+/* Estilos para telas menores que 480px */
+@media (max-width: 480px) {
+    /* Ajustar texto do box */
+    .box-texto p {
+        font-size: 14px;
+    }
+
+    /* Ajustar tamanho da imagem interna */
+    .imagem-interna {
+        max-width: 80px;
+    }
+
+    /* Ajustar títulos */
+    .quadrado h3 {
+        font-size: 16px;
+    }
+
+    /* Ajustar fontes gerais */
+    .footer-info p,
+    .footer-nav a,
+    .footer-credits p {
+        font-size: 9px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

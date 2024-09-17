@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Serviços</title>
     <style>
         * {
@@ -234,8 +235,14 @@
 <body>
     <header>
         <nav>
+            <!-- Ícone do Menu Hambúrguer -->
+            <div class="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul data-aos="fade-left">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="sobrenós.html">Sobre Nós</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
                 <li class="dropdown">
@@ -250,12 +257,14 @@
             </ul>
         </nav>
         <div class="logo-container">
-            <h2 data-aos="fade-up">Serviços</h2>
+            <h2 data-aos="fade-up">Bem-vindo ao Escritório de Pedro Nespolis Advogados</h2>
             <div class="logo">
-                <img src="images/logo_principal.png" alt="Logo do Site">
+                <a href="index.html"><img src="images/logo_principal.png" alt="Logo do Site"></a>
             </div>
         </div>
+       
     </header>
+    
 
     <main>
         <!-- Seção Serviços -->
@@ -316,12 +325,12 @@
                 <p>06-46205414</p>
                 <p><a href="mailto:pedronespolis.adv@gmail.com">pedronespolis.adv@gmail.com</a></p>
             </div>
-            <nav class="footer-nav">
-                <a href="index.html" target="_blank">Home</a>
-                <a href="sobrenós.html" target="_blank">Sobre Nós</a>
-                <a href="servicos.html" target="_blank">Serviços</a>
-                <a href="#contato">Contato</a>
-            </nav>
+            <nav class="footer-nav"></nav>
+				<a href="index.html" >Home</a>
+				<a href="sobrenós.html" >Sobre Nós</a>
+				<a href="servicos.html" >Serviços</a>
+				<a href="#contato">Contato</a>
+			</nav>
             <div class="footer-social">
                 <a href="https://api.whatsapp.com/send/?phone=%2B5511998701465&text&type=phone_number&app_absent=0" target="_blank"><img src="images/whats_footer.svg" alt="WhatsApp"></a>
                 <a href="https://instagram.com" target="_blank"><img src="images/insta_footer.svg" alt="Instagram"></a>
@@ -332,6 +341,16 @@
             <p>Todos os direitos reservados &copy; 2024 | Desenvolvido por <strong>TaSh</strong></p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuHamburger = document.querySelector('.menu-hamburger');
+            const navMenu = document.querySelector('nav ul');
+    
+            menuHamburger.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+        });
+    </script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

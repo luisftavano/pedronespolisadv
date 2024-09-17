@@ -292,7 +292,7 @@ footer {
     width: auto; /* Mantém a proporção da imagem */
 }
 
-.footer-info {
+.footer-info{
     text-align: left;
     color: white;
     transform:translate(-160px);
@@ -305,7 +305,14 @@ footer {
     line-height: 1.5;
     
 }
-
+.footer-info a{
+    color: white;
+    text-decoration: none;
+}
+.footer-info a:hover{
+    color: white;
+    text-decoration: none;
+}
 .footer-nav {
     display: flex;
     gap: 20px;
@@ -319,6 +326,10 @@ footer {
     color: white;
     font-size: 14px;
     line-height: 1.5;
+}
+.footer-nav a:hover{
+    color: white;
+    text-decoration: none;
 }
 
 .footer-social {

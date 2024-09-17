@@ -145,6 +145,9 @@
         .servico-box p {
             text-align: center;
         }
+        main {
+            flex: 1; /* Faz com que o main ocupe o espaço disponível restante */
+        }
 
         footer {
             background-color: #383F3A; /* Cor de fundo cinza */
@@ -170,6 +173,7 @@
             align-items: flex-end; /* Alinha verticalmente a logo */
         }
 
+
         .footer-logo img {
             max-height: 100px; /* Define a altura máxima da imagem */
             width: auto; /* Mantém a proporção da imagem */
@@ -179,12 +183,22 @@
             text-align: left;
             color: white;
             transform:translate(-160px);
+            
         }
 
         .footer-info p {
             margin: 5px 0;
             font-size: 14px;
             line-height: 1.5;
+            
+        }
+        .footer-info a{
+            color: white;
+            text-decoration: none;
+        }
+        .footer-info a:hover{
+            color: white;
+            text-decoration: none;
         }
 
         .footer-nav {
@@ -192,6 +206,7 @@
             gap: 20px;
             align-items: center;
             transform: translate(140px);
+            
         }
 
         .footer-nav a {
@@ -199,6 +214,10 @@
             color: white;
             font-size: 14px;
             line-height: 1.5;
+        }
+        .footer-nav a:hover{
+            color: white;
+            text-decoration: none;
         }
 
         .footer-social {
@@ -212,7 +231,6 @@
             width: 30px;
             height: 30px;
         }
-
         .footer-credits {
             text-align: center;
             margin-top: 20px;
@@ -230,6 +248,8 @@
         .footer-credits strong {
             font-weight: bold;
         }
+
+
     </style>
 </head>
 <body>
@@ -242,7 +262,7 @@
                 <span></span>
             </div>
             <ul data-aos="fade-left">
-                <li><a href="#home">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="sobrenós.html">Sobre Nós</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
                 <li class="dropdown">
@@ -315,32 +335,32 @@
     </main>
     
     <footer>
-        <div class="footer-container">
-            <div class="footer-logo">
-                <img src="images/logo_footer.png" alt="Logo">
-            </div>
-            <div class="footer-info">
-                <p>Av.Franscisco Rodrigues Filho, 1930-Vila Mogilar</p>
-                <p>Mogi das Cruzes-SP</p>
-                <p>06-46205414</p>
-                <p><a href="mailto:pedronespolis.adv@gmail.com">pedronespolis.adv@gmail.com</a></p>
-            </div>
-            <nav class="footer-nav"></nav>
+		<div class="footer-container">
+			<div class="footer-logo">
+				<img src="images/logo_footer.png" alt="Logo">
+			</div>
+			<div class="footer-info">
+				<p>Av.Franscisco Rodrigues Filho, 1930-Vila Mogilar</p>
+				<p>Mogi das Cruzes-SP</p>
+				<p>06-46205414</p>
+				<p><a href="mailto:pedronespolis.adv@gmail.com">pedronespolis.adv@gmail.com</a></p>
+			</div>
+			<nav class="footer-nav">
 				<a href="index.html" >Home</a>
 				<a href="sobrenós.html" >Sobre Nós</a>
 				<a href="servicos.html" >Serviços</a>
 				<a href="#contato">Contato</a>
 			</nav>
-            <div class="footer-social">
-                <a href="https://api.whatsapp.com/send/?phone=%2B5511998701465&text&type=phone_number&app_absent=0" target="_blank"><img src="images/whats_footer.svg" alt="WhatsApp"></a>
-                <a href="https://instagram.com" target="_blank"><img src="images/insta_footer.svg" alt="Instagram"></a>
-                <a href="https://www.linkedin.com/in/pedro-nespolis-b517612b5/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-            </div>
-        </div>
+			<div class="footer-social">
+				<a href="https://api.whatsapp.com/send/?phone=%2B5511998701465&text&type=phone_number&app_absent=0" target="_blank"><img src="images/whats_footer.svg" alt="WhatsApp"></a>
+				<a href="https://instagram.com" target="_blank"><img src="images/insta_footer.svg" alt="Instagram"></a>
+				<a href="https://www.linkedin.com/in/pedro-nespolis-b517612b5/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+			</div>
+		</div>
         <div class="footer-credits">
             <p>Todos os direitos reservados &copy; 2024 | Desenvolvido por <strong>TaSh</strong></p>
         </div>
-    </footer>
+	</footer>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const menuHamburger = document.querySelector('.menu-hamburger');

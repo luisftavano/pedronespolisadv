@@ -138,93 +138,109 @@
             margin-top: 20px; 
             max-width: 100%; 
         }
+        main {
+            flex: 1; /* Faz com que o main ocupe o espaço disponível restante */
+        }
+
         footer {
-    background-color: #383F3A; /* Cor de fundo cinza */
-    padding: 20px 0;
-    width: 100%;
-    box-sizing: border-box; /* Inclui o padding na altura total do footer */
-}
+            background-color: #383F3A; /* Cor de fundo cinza */
+            padding: 20px 0;
+            width: 100%;
+            box-sizing: border-box; /* Inclui o padding na altura total do footer */
+        }
 
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box; /* Inclui o padding na largura total do container */
-}
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-sizing: border-box; /* Inclui o padding na largura total do container */
+        }
 
-.footer-logo {
-    margin-right: 0; /* Remove qualquer margem à direita */
-    transform: translateX(-100px); 
-    display: flex;
-    align-items: flex-end; /* Alinha verticalmente a logo */
-}
+        .footer-logo {
+            margin-right: 0; /* Remove qualquer margem à direita */
+            transform: translateX(-100px); 
+            display: flex;
+            align-items: flex-end; /* Alinha verticalmente a logo */
+        }
 
 
-.footer-logo img {
-    max-height: 100px; /* Define a altura máxima da imagem */
-    width: auto; /* Mantém a proporção da imagem */
-}
+        .footer-logo img {
+            max-height: 100px; /* Define a altura máxima da imagem */
+            width: auto; /* Mantém a proporção da imagem */
+        }
 
-.footer-info {
-    text-align: left;
-    color: white;
-    transform:translate(-160px);
-    
-}
+        .footer-info {
+            text-align: left;
+            color: white;
+            transform:translate(-160px);
+            
+        }
 
-.footer-info p {
-    margin: 5px 0;
-    font-size: 14px;
-    line-height: 1.5;
-    
-}
+        .footer-info p {
+            margin: 5px 0;
+            font-size: 14px;
+            line-height: 1.5;
+            
+        }
+        .footer-info a{
+            color: white;
+            text-decoration: none;
+        }
+        .footer-info a:hover{
+            color: white;
+            text-decoration: none;
+        }
 
-.footer-nav {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    transform: translate(140px);
-    
-}
+        .footer-nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            transform: translate(140px);
+            
+        }
 
-.footer-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    line-height: 1.5;
-}
+        .footer-nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .footer-nav a:hover{
+            color: white;
+            text-decoration: none;
+        }
 
-.footer-social {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    transform: translate(100px);
-}
+        .footer-social {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            transform: translate(100px);
+        }
 
-.footer-social a img {
-    width: 30px;
-    height: 30px;
-}
-.footer-credits {
-    text-align: center;
-    margin-top: 20px;
-    color: white;
-    background-color: #383F3A; /* Mantém o mesmo fundo do footer */
-    padding: 10px 0;
-}
+        .footer-social a img {
+            width: 30px;
+            height: 30px;
+        }
+        .footer-credits {
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+            background-color: #383F3A; /* Mantém o mesmo fundo do footer */
+            padding: 10px 0;
+        }
 
-.footer-credits p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.5;
-}
+        .footer-credits p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
 
-.footer-credits strong {
-    font-weight: bold;
-}
+        .footer-credits strong {
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -237,7 +253,7 @@
                 <span></span>
             </div>
             <ul data-aos="fade-left">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#index.html">Home</a></li>
                 <li><a href="sobrenós.html">Sobre Nós</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
                 <li class="dropdown">
@@ -288,7 +304,7 @@
 				<p>06-46205414</p>
 				<p><a href="mailto:pedronespolis.adv@gmail.com">pedronespolis.adv@gmail.com</a></p>
 			</div>
-			<nav class="footer-nav"></nav>
+			<nav class="footer-nav">
 				<a href="index.html" >Home</a>
 				<a href="sobrenós.html" >Sobre Nós</a>
 				<a href="servicos.html" >Serviços</a>
